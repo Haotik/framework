@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+  <title>{{ title }}</title>
+</head>
+{% autoescape false %}
+<body>
+    <header>
+        {% include 'nav.twig' %}
+    </header>
+    {% if error|length > 0 %}
+        {% include 'error.twig' %}
+    {% endif %}
+    <div class="container">
+        {{ content }}
+    </div>
+    <footer>
+        {% include 'footer.twig' %}
+    </footer>
+</body>
+{% endautoescape %}

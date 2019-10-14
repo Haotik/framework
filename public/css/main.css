@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    border: 1px solid grey;
+}
+
+
+/*картинки*/
+.IMGnormal {
+    border: 1px solid white;
+    margin: 10px;
+    float: left;
+}
+
+.IMGnormal:hover {
+    border: 1px solid red;
+}
+/*конец картинок*/
+
+/*Ошибки*/
+.errorShow {
+    position: absolute;
+    text-align: center;
+    background-color: red;
+    width: 500px;
+    height: 100px;
+    left:30%;
+    top:0;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.test {
+    position: absolute;
+    left:10px;
+    top:10px;
+    background-color: blue;
+    color: white;
+}
+/**/
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #aaaaaa;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header_nav {
+    display: flex;
+}
+
+.header_logo {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.header_nav_item {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
