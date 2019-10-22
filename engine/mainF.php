@@ -1,13 +1,15 @@
 <?php
 
-function test($value)
+function test($a = "Задайте аргументы для теста")
 {
-    echo "<span class = \"test\">" ;
-	echo "<pre>";
-	var_dump($value);
-	echo "</pre>";
+    $params = func_get_args();
+    echo "<span class = \"test\">";
+    echo "<pre>";
+    foreach ($params as $testItem) {
+        var_dump($testItem);
+    }
+    echo "</pre>";
 	echo "</span>";
-	//die;
 }
 
 function autoloader() 
@@ -30,4 +32,13 @@ function setError($text) {
 function setGreating($text) {
     global $greating;
     $greating = $text;
+}
+
+function checkFlag ($flagName, $value, $method = 'post') {
+    if ($method == 'post') {
+        if (isset($_POST[$flagName]) AND $_POST[$flagName] == $value) return true;
+        else return false;
+    } else {
+        if (isset($_GET[$flagName]) AND $_GET[$flagName] == $value) return true;
+    }
 }

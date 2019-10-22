@@ -60,6 +60,9 @@ header {
 
 .header_nav {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .header_logo {
@@ -68,6 +71,7 @@ header {
     text-align: center;
     line-height: 50px;
 }
+
 
 .header_nav_item {
     width: 100px;
@@ -83,6 +87,14 @@ header {
     text-decoration: none;
 }
 
+.header_greating {
+    text-align: right;
+}
+
+.header_greating_form {
+    display: inline-block;
+}
+
 .container {
     padding: 50px;
     display: flex;
@@ -90,4 +102,43 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+}
+
+.battle_round {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 100px;
+    padding: 15px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.battle_round_title{
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+}
+
+.battle_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player, .enemy {
+    width: 200px;
+    text-align: center;
+}
+
+.hp_bar {
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    height: 20px;
+    width: 120px;
 }
